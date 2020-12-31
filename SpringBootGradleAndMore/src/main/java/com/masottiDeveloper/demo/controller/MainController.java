@@ -24,7 +24,7 @@ public class MainController
         List<JSONObject> entities = new ArrayList<JSONObject>();
 //        for (Entity n : entityList) {
             JSONObject entity = new JSONObject();
-            entity.put("aa", "bb");
+            entity.put("aa", "bbnnnn");
             entities.add(entity);
 //        }
         return new ResponseEntity<Object>(entities, HttpStatus.OK);
