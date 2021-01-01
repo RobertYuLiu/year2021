@@ -1,0 +1,32 @@
+
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+
+    // Apply the application plugin to add support for building a CLI application.
+    id 'application'
+}
+
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+//    jcenter()
+	mavenCentral()
+}
+
+dependencies {
+    // This dependency is used by the application.
+//    implementation 'com.google.guava:guava:28.2-jre'
+
+    // Use JUnit test framework
+//    testImplementation 'junit:junit:4.12'
+	
+//	implementation "joda-time:joda-time:2.2"
+	compile "joda-time:joda-time:2.2"
+	compile project(':sub_project1'), project(':sub_project2'), project(':project_3')
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'MasottiDeveloper.App'
+}

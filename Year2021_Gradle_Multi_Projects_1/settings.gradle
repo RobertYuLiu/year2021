@@ -1,0 +1,10 @@
+
+rootProject.name = 'Year2021_Gradle_Multi_Projects_1'
+
+include 'sub_project1'
+include 'sub_project2'
+include 'project_3'
+println 'qqq'
+println file('..')
+println 'ooo'
+project(':project_3').projectDir = new File('../sub_of_gradle_proj')
